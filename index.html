@@ -1,1 +1,1076 @@
-<!DOCTYPE HTML> <HTML LANG="EN"> <HEAD> <META CHARSET="UTF-8"> <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0"> <TITLE>CASTLE BROMWICH GOLF SOCIETY</TITLE> <STYLE> * { BOX-SIZING: BORDER-BOX; MARGIN: 0; padding: 0; } html { scroll-behavior: smooth; } body { font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333; background: #f4f7f2; } /* ========================= PASSWORD SCREEN ========================== */ #login-screen { position: fixed; inset: 0; z-index: 9999; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; color: white; text-align: center; background: linear-gradient( rgba(0, 50, 25, 0.88), rgba(0, 70, 35, 0.92) ), url("https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1800&q=80") center / cover no-repeat; } .login-box { width: 100%; max-width: 450px; padding: 40px 30px; background: rgba(255, 255, 255, 0.97); color: #333; border-radius: 15px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35); } .login-box .golf-icon { font-size: 55px; margin-bottom: 10px; } .login-box h1 { margin-bottom: 10px; color: #064d2a; font-size: 30px; } .login-box h2 { margin-bottom: 25px; color: #c9a227; font-size: 20px; } .login-box p { margin-bottom: 20px; } .login-box input { width: 100%; padding: 14px; margin-bottom: 12px; font-size: 17px; text-align: center; border: 2px solid #ccc; border-radius: 6px; } .login-box input:focus { outline: none; border-color: #064d2a; } .login-box button { width: 100%; padding: 14px; color: white; background: #064d2a; border: none; border-radius: 6px; font-size: 17px; font-weight: bold; cursor: pointer; } .login-box button:hover { background: #c9a227; color: #064d2a; } #login-error { display: none; margin-top: 15px; color: #b00020; font-weight: bold; } /* ========================= MAIN WEBSITE ========================== */ #website { display: none; } /* ========================= HEADER ========================== */ header { padding: 90px 20px; color: #fff; text-align: center; background: linear-gradient( rgba(0, 70, 35, 0.72), rgba(0, 50, 25, 0.72) ), url("https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1800&q=80") center / cover no-repeat; } header h1 { margin-bottom: 10px; font-size: 48px; } header p { font-size: 21px; } /* ========================= NAVIGATION ========================== */ nav { position: sticky; top: 0; z-index: 1000; display: flex; flex-wrap: wrap; justify-content: center; background: #064d2a; } nav a { padding: 15px 20px; color: #fff; font-weight: bold; text-decoration: none; } nav a:hover, nav a:focus { color: #064d2a; background: #c9a227; } /* ========================= GENERAL SECTIONS ========================== */ section { max-width: 1150px; margin: 0 auto; padding: 55px 20px; } section h2 { margin-bottom: 30px; color: #064d2a; font-size: 32px; text-align: center; } .intro { max-width: 800px; margin: 0 auto; font-size: 18px; text-align: center; } /* ========================= CARDS ========================== */ .people { display: grid; grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) ); gap: 20px; } .card, .person { padding: 25px; background: #fff; border-radius: 10px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08); } .card { text-align: center; } .card h3 { margin-bottom: 10px; color: #064d2a; } .person strong { display: block; margin-bottom: 5px; color: #064d2a; font-size: 18px; } /* ========================= PRESENTATION NIGHT ========================== */ .highlight { max-width: 800px; margin: 30px auto 0; padding: 35px; color: #fff; text-align: center; background: #064d2a; border-radius: 12px; } .highlight h3 { margin-bottom: 15px; color: #f2d36b; font-size: 28px; } .highlight p { margin: 8px 0; font-size: 17px; } .gold { color: #f2d36b; font-weight: bold; } /* ========================= TABLES ========================== */ .table-wrapper { width: 100%; overflow-x: auto; margin-top: 20px; border-radius: 8px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07); } table { width: 100%; min-width: 650px; border-collapse: collapse; background: #fff; } caption { padding: 12px; color: #064d2a; font-size: 20px; font-weight: bold; text-align: left; } th { padding: 12px; color: #fff; text-align: left; background: #064d2a; } td { padding: 11px; border-bottom: 1px solid #ddd; } tbody tr:nth-child(even) { background: #f3f6f2; } tbody tr:hover { background: #e8f0e8; } .winner { color: #064d2a; font-weight: bold; } /* ========================= RESULT ========================== */ .result-box { max-width: 750px; margin: 0 auto; padding: 25px; background: #fff; border-left: 6px solid #c9a227; border-radius: 8px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08); } .result-box h3 { margin-bottom: 12px; color: #064d2a; font-size: 25px; } .score { margin-top: 10px; color: #064d2a; font-size: 25px; font-weight: bold; } /* ========================= NOTES ========================== */ .small-note { margin-top: 15px; color: #666; font-size: 14px; text-align: center; } /* ========================= FOOTER ========================== */ footer { margin-top: 30px; padding: 30px 20px; color: #fff; text-align: center; background: #063c22; } footer p + p { margin-top: 5px; } /* ========================= MOBILE ========================== */ @media (max-width: 700px) { header { padding: 70px 20px; } header h1 { font-size: 34px; } header p { font-size: 17px; } nav a { padding: 11px 12px; font-size: 14px; } section { padding: 40px 15px; } section h2 { font-size: 28px; } .highlight { padding: 25px 18px; } .highlight h3 { font-size: 24px; } th, td { padding: 8px 6px; font-size: 14px; } .login-box { padding: 30px 20px; } .login-box h1 { font-size: 26px; } } </style> </head> <body> <!-- ================================================== PASSWORD / LOGIN SCREEN =================================================== --> <div id="login-screen"> <div class="login-box"> <div class="golf-icon">⛳</div> <h1>Castle Bromwich Golf Society</h1> <h2>Members' Website</h2> <p> Please enter the society password to continue. </p> <form id="login-form"> <input type="password" id="password" placeholder="Enter password" autocomplete="off" required > <button type="submit"> Enter Website </button> </form> <p id="login-error"> Incorrect password. Please try again. </p> </div> </div> <!-- ================================================== MAIN WEBSITE =================================================== --> <div id="website"> <!-- HEADER --> <header> <h1>Castle Bromwich Golf Society</h1> <p> Golf &bull; Competition &bull; Friendship &bull; Since 2009 </p> </header> <!-- NAVIGATION --> <nav aria-label="Main navigation"> <a href="#home">Home</a> <a href="#fixtures">Fixtures</a> <a href="#results">Results</a> <a href="#honours">Honours</a> <a href="#handicaps">Playing Handicaps</a> <a href="#about">About</a> <a href="#contact">Contact</a> </nav> <main> <!-- ================================================== HOME =================================================== --> <section id="home"> <h2>Welcome</h2> <p class="intro"> Welcome to the official website of the Castle Bromwich Golf Society. Founded in 2009, the society brings together friends and golfers for competitive golf, trophies, social events and plenty of good times. </p> <div class="highlight"> <h3>2026 Presentation Night</h3> <p> <span class="gold"> Saturday 21st November 2026 </span> </p> <p>Old Saltleians Rugby Club</p> <p>Coleshill Road</p> <p>Water Orton</p> <p>B46 1QE</p> <br> <p> <strong>Arrival:</strong> 6:00pm </p> <p> <strong>Presentations:</strong> 7:00pm </p> <p> <strong>Live Music:</strong> From 8:00pm onwards </p> <br> <p> A small contribution of <strong>&pound;5 per person</strong>, or <strong>&pound;5 per couple/family</strong>, would be appreciated to help cover some of the costs for the evening. </p> </div> </section> <!-- ================================================== FIXTURES =================================================== --> <section id="fixtures"> <h2>Upcoming Event</h2> <div class="card"> <h3>Presentation Night</h3> <p> <strong> Saturday 21st November 2026 </strong> </p> <p>Old Saltleians Rugby Club</p> <p>Coleshill Road, Water Orton</p> <p>B46 1QE</p> <br> <p> <strong>6:00pm</strong> &ndash; Arrival </p> <p> <strong>7:00pm</strong> &ndash; Presentations </p> <p> <strong>8:00pm onwards</strong> &ndash; Live Music </p> <br> <p> <strong>Contribution:</strong> &pound;5 per person or &pound;5 per couple/family </p> </div> </section> <!-- ================================================== LATEST RESULT =================================================== --> <section id="results"> <h2>Latest Result</h2> <div class="result-box"> <h3>BDM Trophy</h3> <p> <strong>Course:</strong> West Midland Golf Club </p> <p> <strong>Winner:</strong> Adam Beasley </p> <p class="score"> 44 Stableford Points </p> </div> </section> <!-- ================================================== 2026 HONOURS =================================================== --> <section id="honours"> <h2>2026 Honours</h2> <div class="table-wrapper"> <table> <caption> 2026 Trophy Results </caption> <thead> <tr> <th scope="col">Match</th> <th scope="col">Date</th> <th scope="col">Trophy</th> <th scope="col">Winner</th> <th scope="col">Runner Up</th> <th scope="col">Course</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>Friday 3rd April</td> <td>Mundell Cup</td> <td class="winner">Simon Madders</td> <td>Geoff Wheeler</td> <td>Kenilworth</td> </tr> <tr> <td>2</td> <td>Saturday 30th May</td> <td>Sheldon Cup</td> <td class="winner">Geoff Wheeler</td> <td>Jack Ireland</td> <td>Oakridge</td> </tr> <tr> <td>3</td> <td>Saturday 6th June</td> <td>Les White Trophy</td> <td class="winner">Simon Madders</td> <td>Jack Ireland</td> <td>Stratford Park</td> </tr> <tr> <td>4</td> <td>Saturday 11th July</td> <td>Dave Oley Cup</td> <td class="winner">Simon Madders</td> <td>Matt Stubbs</td> <td>Atherstone</td> </tr> <tr> <td>5</td> <td>Saturday 25th July</td> <td>General Committee Cup</td> <td class="winner">Chris Watkins</td> <td>Adam Beasley</td> <td>The Welcome</td> </tr> <tr> <td>6</td> <td>Sunday 2nd August</td> <td>Presidents Cup</td> <td class="winner">Simon Madders</td> <td>Matt Stubbs</td> <td>Kidderminster</td> </tr> <tr> <td>7</td> <td>Friday 14th August</td> <td>Mark Sadler Cup</td> <td class="winner">Geoff Wheeler</td> <td>Chris Watkins</td> <td>Nuneaton</td> </tr> <tr> <td>8</td> <td>Saturday 5th September</td> <td>Calmec Trophy</td> <td class="winner">Junaid Khan</td> <td>Mark Clayton</td> <td>Gaudet Luce</td> </tr> <tr> <td>9</td> <td>Saturday 19th September</td> <td>BDM Trophy</td> <td class="winner">Adam Beasley</td> <td>George Sears</td> <td>West Midland</td> </tr> </tbody> </table> </div> <div class="table-wrapper"> <table> <caption> Championship Honours </caption> <thead> <tr> <th scope="col">Competition</th> <th scope="col">Winner</th> <th scope="col">Runner Up</th> </tr> </thead> <tbody> <tr> <td>Championship</td> <td class="winner">Simon Madders</td> <td>Chris Watkins</td> </tr> <tr> <td>Division 1</td> <td class="winner">Chris Watkins</td> <td>Jack Ireland</td> </tr> <tr> <td>Division 2</td> <td class="winner">Simon Madders</td> <td>Junaid Khan</td> </tr> </tbody> </table> </div> </section> <!-- ================================================== PLAYING HANDICAPS =================================================== --> <section id="handicaps"> <h2>Playing Handicaps</h2> <p class="intro"> Current playing handicaps for Castle Bromwich Golf Society members. </p> <div class="table-wrapper"> <table> <caption> Member Playing Handicaps </caption> <thead> <tr> <th scope="col">Name</th> <th scope="col">Full H/c</th> <th scope="col">Playing H/c</th> <th scope="col">3/4 H/c</th> </tr> </thead> <tbody> <tr> <td>Adam Beasley</td> <td>21.75</td> <td>22</td> <td>16</td> </tr> <tr> <td>Andy Moulton</td> <td>20.11</td> <td>20</td> <td>15</td> </tr> <tr> <td>Chris Watkins</td> <td>14.89</td> <td>15</td> <td>11</td> </tr> <tr> <td>Colin Mundell</td> <td>23.85</td> <td>24</td> <td>18</td> </tr> <tr> <td>Dave Griffiths</td> <td>28.00</td> <td>28</td> <td>21</td> </tr> <tr> <td>Dave Rogers</td> <td>28.00</td> <td>28</td> <td>21</td> </tr> <tr> <td>Dean Hancock</td> <td>26.00</td> <td>26</td> <td>20</td> </tr> <tr> <td>Gary Sheldon</td> <td>28.00</td> <td>28</td> <td>21</td> </tr> <tr> <td>Geoff Wheeler</td> <td>16.33</td> <td>16</td> <td>12</td> </tr> <tr> <td>George Sears</td> <td>34.20</td> <td>34</td> <td>26</td> </tr> <tr> <td>Ian White</td> <td>26.64</td> <td>27</td> <td>20</td> </tr> <tr> <td>Jack Ireland</td> <td>12.45</td> <td>12</td> <td>9</td> </tr> <tr> <td>Jack Sears</td> <td>25.04</td> <td>25</td> <td>19</td> </tr> <tr> <td>Junaid Khan</td> <td>28.00</td> <td>28</td> <td>21</td> </tr> <tr> <td>Mark Clayton</td> <td>11.39</td> <td>11</td> <td>9</td> </tr> <tr> <td>Matt Stubbs</td> <td>15.78</td> <td>16</td> <td>12</td> </tr> <tr> <td>Rich Allison</td> <td>26.95</td> <td>27</td> <td>20</td> </tr> <tr> <td>Rod White</td> <td>21.96</td> <td>22</td> <td>16</td> </tr> <tr> <td>Simon Madders</td> <td>8.27</td> <td>8</td> <td>6</td> </tr> <tr> <td>Steve Hughes</td> <td>17.59</td> <td>18</td> <td>13</td> </tr> <tr> <td>Stuart White</td> <td>28.00</td> <td>28</td> <td>21</td> </tr> <tr> <td>Tony Brown</td> <td>28.00</td> <td>28</td> <td>21</td> </tr> </tbody> </table> </div> <p class="small-note"> Handicaps shown are the figures supplied by Castle Bromwich Golf Society. </p> </section> <!-- ================================================== ABOUT =================================================== --> <section id="about"> <h2>About The Society</h2> <p class="intro"> Castle Bromwich Golf Society was established in <strong>2009</strong>. The society combines competitive golf with friendship and social events, with members competing throughout the season for a range of trophies and championships. </p> <div class="people"> <div class="person"> <strong>Social Secretary</strong> Jack Ireland </div> <div class="person"> <strong>Treasurer</strong> Jack Sears </div> <div class="person"> <strong>Chairman</strong> Ian White </div> <div class="person"> <strong>President</strong> Gary Sheldon </div> </div> </section> <!-- ================================================== CONTACT =================================================== --> <section id="contact"> <h2>Contact</h2> <div class="card"> <h3>Castle Bromwich Golf Society</h3> <p> For information about the society, fixtures, competitions or membership, please speak to one of the society committee. </p> <br> <p> <strong>Social Secretary:</strong> Jack Ireland </p> <p> <strong>Treasurer:</strong> Jack Sears </p> <p> <strong>Chairman:</strong> Ian White </p> <p> <strong>President:</strong> Gary Sheldon </p> </div> </section> </main> <!-- ================================================== FOOTER =================================================== --> <footer> <p> &copy; 2026 Castle Bromwich Golf Society </p> <p> Golf &bull; Friendship &bull; Competition </p> </footer> </div> <!-- ================================================== PASSWORD SCRIPT =================================================== --> <script> /* * PASSWORD * -------- * Change "Cricket" here if you want to change * the website password in the future. */ const correctPassword = "Cricket"; const loginForm = document.getElementById("login-form"); const passwordInput = document.getElementById("password"); const loginScreen = document.getElementById("login-screen"); const website = document.getElementById("website"); const loginError = document.getElementById("login-error"); loginForm.addEventListener("submit", function(event) { event.preventDefault(); const enteredPassword = passwordInput.value; if (enteredPassword === correctPassword) { loginScreen.style.display = "none"; website.style.display = "block"; } else { loginError.style.display = "block"; passwordInput.value = ""; passwordInput.focus(); } }); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="noindex, nofollow"> <meta name="googlebot" content="noindex, nofollow">
+<title>Castle Bromwich Golf Society</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f1e8;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* =========================
+       PASSWORD SCREEN
+    ========================= */
+
+    #login-screen {
+        position: fixed;
+        inset: 0;
+        background:
+            linear-gradient(rgba(0, 60, 30, 0.88), rgba(0, 40, 20, 0.92)),
+            url("https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=2000&q=80")
+            center / cover no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        z-index: 99999;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 430px;
+        background: white;
+        padding: 40px 30px;
+        border-radius: 14px;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+    }
+
+    .login-box h1 {
+        margin-top: 0;
+        color: #075b32;
+        font-size: 30px;
+    }
+
+    .login-box p {
+        color: #666;
+        margin-bottom: 25px;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 14px;
+        font-size: 17px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 15px;
+    }
+
+    .login-box button {
+        width: 100%;
+        padding: 14px;
+        background: #075b32;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .login-box button:hover {
+        background: #064526;
+    }
+
+    #login-error {
+        display: none;
+        color: #b00020;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    /* =========================
+       WEBSITE
+    ========================= */
+
+    #website {
+        display: none;
+    }
+
+    header {
+        background:
+            linear-gradient(rgba(0, 70, 35, 0.78), rgba(0, 50, 25, 0.85)),
+            url("https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=2000&q=80")
+            center / cover no-repeat;
+
+        color: white;
+        text-align: center;
+        padding: 90px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 48px;
+    }
+
+    header p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    nav {
+        background: #075b32;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 18px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        background: #c9a227;
+        color: #fff;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    section {
+        background: white;
+        margin: 30px 0;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+        color: #075b32;
+        border-bottom: 3px solid #c9a227;
+        padding-bottom: 8px;
+        margin-top: 0;
+    }
+
+    /* =========================
+       HIGHLIGHT BOXES
+    ========================= */
+
+    .highlight {
+        background: #fff8dc;
+        border-left: 6px solid #c9a227;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    .highlight h3 {
+        color: #075b32;
+        margin-top: 0;
+    }
+
+    /* =========================
+       TABLES
+    ========================= */
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        min-width: 650px;
+    }
+
+    caption {
+        caption-side: top;
+        text-align: left;
+        font-weight: bold;
+        color: #075b32;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    th {
+        background: #075b32;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+
+    td {
+        padding: 11px 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tbody tr:nth-child(even) {
+        background: #f7f7f7;
+    }
+
+    tbody tr:hover {
+        background: #fff8dc;
+    }
+
+    /* =========================
+       PRESENTATION NIGHT
+    ========================= */
+
+    .presentation-night {
+        text-align: center;
+        background: linear-gradient(135deg, #075b32, #0b7443);
+        color: white;
+    }
+
+    .presentation-night h2 {
+        color: white;
+        border-bottom-color: #c9a227;
+    }
+
+    .presentation-night strong {
+        color: #ffe48a;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-box {
+        text-align: center;
+    }
+
+    .committee-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .committee-member {
+        background: #f4f1e8;
+        padding: 18px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .committee-member strong {
+        display: block;
+        color: #075b32;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+        background: #063c22;
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+        margin-top: 40px;
+    }
+
+    footer p {
+        margin: 5px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 700px) {
+        header {
+            padding: 65px 15px;
+        }
+
+        header h1 {
+            font-size: 34px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav a {
+            padding: 11px 10px;
+            font-size: 14px;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        section {
+            padding: 20px 15px;
+            margin: 20px 0;
+        }
+
+        .login-box {
+            padding: 30px 20px;
+        }
+    }
+</style>
+</head>
+<body>
+<!-- =========================
+     PASSWORD SCREEN
+========================= -->
+
+<div id="login-screen">
+
+    <div class="login-box">
+
+        <h1>Castle Bromwich Golf Society</h1>
+
+        <p>
+            Members Area<br>
+            Please enter the password to continue.
+        </p>
+
+        <form onsubmit="checkPassword(event)">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Enter Website
+            </button>
+
+        </form>
+
+        <div id="login-error">
+            Incorrect password. Please try again.
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     WEBSITE
+========================= -->
+
+<div id="website">
+
+    <header>
+
+        <h1>Castle Bromwich Golf Society</h1>
+
+        <p>
+            Established 2009
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav aria-label="Main navigation">
+
+        <a href="#home">Home</a>
+        <a href="#fixtures">Upcoming Events</a>
+        <a href="#results">Results</a>
+        <a href="#honours">Honours</a>
+        <a href="#handicaps">Playing Handicaps</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <main>
+
+        <!-- =========================
+             HOME
+        ========================= -->
+
+        <section id="home">
+
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to the Castle Bromwich Golf Society website.
+            </p>
+
+            <p>
+                This is the members' area for society fixtures,
+                results, honours, playing handicaps and important
+                society information.
+            </p>
+
+
+            <div class="highlight">
+
+                <h3>Latest Result</h3>
+
+                <p>
+                    <strong>BDM Trophy</strong>
+                </p>
+
+                <p>
+                    West Midland Golf Club
+                </p>
+
+                <p>
+                    Winner:
+                    <strong>Adam Beasley</strong>
+                </p>
+
+                <p>
+                    Score:
+                    <strong>44 Stableford Points</strong>
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRESENTATION NIGHT
+        ========================= -->
+
+        <section class="presentation-night">
+
+            <h2>Presentation Night 2026</h2>
+
+            <p>
+                <strong>Saturday 21st November 2026</strong>
+            </p>
+
+            <p>
+                Old Saltleians Rugby Club<br>
+                Coleshill Road<br>
+                Water Orton<br>
+                B46 1QE
+            </p>
+
+            <p>
+                <strong>Arrival:</strong> 6:00pm
+            </p>
+
+            <p>
+                <strong>Presentations:</strong> 7:00pm
+            </p>
+
+            <p>
+                <strong>Live Music:</strong> From 8:00pm onwards
+            </p>
+
+            <p>
+                A £5 contribution per person, or £5 per couple/family,
+                is appreciated to help cover costs.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             UPCOMING EVENTS
+        ========================= -->
+
+        <section id="fixtures">
+
+            <h2>Upcoming Events</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        Castle Bromwich Golf Society Upcoming Events
+                    </caption>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Game</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Course</th>
+                            <th scope="col">Postcode</th>
+                            <th scope="col">Course Website</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>Funday</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             2026 RESULTS / HONOURS
+        ========================= -->
+
+        <section id="results">
+
+            <h2>2026 Results</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        2026 Competition Results
+                    </caption>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Competition</th>
+                            <th scope="col">Winner</th>
+                            <th scope="col">Runner-up</th>
+                            <th scope="col">Course</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Friday 3rd April</td>
+                            <td>Mundell Cup</td>
+                            <td>Simon Madders</td>
+                            <td>Geoff Wheeler</td>
+                            <td>Kenilworth</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday 30th May</td>
+                            <td>Sheldon Cup</td>
+                            <td>Geoff Wheeler</td>
+                            <td>Jack Ireland</td>
+                            <td>Oakridge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday 6th June</td>
+                            <td>Les White Trophy</td>
+                            <td>Simon Madders</td>
+                            <td>Jack Ireland</td>
+                            <td>Stratford Park</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday 11th July</td>
+                            <td>Dave Oley Cup</td>
+                            <td>Simon Madders</td>
+                            <td>Matt Stubbs</td>
+                            <td>Atherstone</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday 25th July</td>
+                            <td>General Committee Cup</td>
+                            <td>Chris Watkins</td>
+                            <td>Adam Beasley</td>
+                            <td>The Welcome</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sunday 2nd August</td>
+                            <td>Presidents Cup</td>
+                            <td>Simon Madders</td>
+                            <td>Matt Stubbs</td>
+                            <td>Kidderminster</td>
+                        </tr>
+
+                        <tr>
+                            <td>Friday 14th August</td>
+                            <td>Mark Sadler Cup</td>
+                            <td>Geoff Wheeler</td>
+                            <td>Chris Watkins</td>
+                            <td>Nuneaton</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday 5th September</td>
+                            <td>Calmec Trophy</td>
+                            <td>Junaid Khan</td>
+                            <td>Mark Clayton</td>
+                            <td>Gaudet Luce</td>
+                        </tr>
+
+                        <tr>
+                            <td>Saturday 19th September</td>
+                            <td>BDM Trophy</td>
+                            <td>Adam Beasley</td>
+                            <td>George Sears</td>
+                            <td>West Midland</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HONOURS
+        ========================= -->
+
+        <section id="honours">
+
+            <h2>2026 Honours</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        Competition Honours
+                    </caption>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Competition</th>
+                            <th scope="col">Winner</th>
+                            <th scope="col">Runner-up</th>
+                            <th scope="col">Course</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Mundell Cup</td>
+                            <td>Simon Madders</td>
+                            <td>Geoff Wheeler</td>
+                            <td>Kenilworth</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sheldon Cup</td>
+                            <td>Geoff Wheeler</td>
+                            <td>Jack Ireland</td>
+                            <td>Oakridge</td>
+                        </tr>
+
+                        <tr>
+                            <td>Les White Trophy</td>
+                            <td>Simon Madders</td>
+                            <td>Jack Ireland</td>
+                            <td>Stratford Park</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dave Oley Cup</td>
+                            <td>Simon Madders</td>
+                            <td>Matt Stubbs</td>
+                            <td>Atherstone</td>
+                        </tr>
+
+                        <tr>
+                            <td>General Committee Cup</td>
+                            <td>Chris Watkins</td>
+                            <td>Adam Beasley</td>
+                            <td>The Welcome</td>
+                        </tr>
+
+                        <tr>
+                            <td>Presidents Cup</td>
+                            <td>Simon Madders</td>
+                            <td>Matt Stubbs</td>
+                            <td>Kidderminster</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mark Sadler Cup</td>
+                            <td>Geoff Wheeler</td>
+                            <td>Chris Watkins</td>
+                            <td>Nuneaton</td>
+                        </tr>
+
+                        <tr>
+                            <td>Calmec Trophy</td>
+                            <td>Junaid Khan</td>
+                            <td>Mark Clayton</td>
+                            <td>Gaudet Luce</td>
+                        </tr>
+
+                        <tr>
+                            <td>BDM Trophy</td>
+                            <td>Adam Beasley</td>
+                            <td>George Sears</td>
+                            <td>West Midland</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <h2>Championship Honours</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Championship</th>
+                            <th scope="col">Winner</th>
+                            <th scope="col">Runner-up</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>Championship</td>
+                            <td>Simon Madders</td>
+                            <td>Chris Watkins</td>
+                        </tr>
+
+                        <tr>
+                            <td>Division 1</td>
+                            <td>Chris Watkins</td>
+                            <td>Jack Ireland</td>
+                        </tr>
+
+                        <tr>
+                            <td>Division 2</td>
+                            <td>Simon Madders</td>
+                            <td>Junaid Khan</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PLAYING HANDICAPS
+        ========================= -->
+
+        <section id="handicaps">
+
+            <h2>Playing Handicaps</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <caption>
+                        Current Playing Handicaps
+                    </caption>
+
+                    <thead>
+
+                        <tr>
+                            <th scope="col">Player</th>
+                            <th scope="col">Full Handicap</th>
+                            <th scope="col">Playing Handicap</th>
+                            <th scope="col">3/4 Handicap</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr><td>Adam Beasley</td><td>21.75</td><td>22</td><td>16</td></tr>
+                        <tr><td>Andy Moulton</td><td>20.11</td><td>20</td><td>15</td></tr>
+                        <tr><td>Chris Watkins</td><td>14.89</td><td>15</td><td>11</td></tr>
+                        <tr><td>Colin Mundell</td><td>23.85</td><td>24</td><td>18</td></tr>
+                        <tr><td>Dave Griffiths</td><td>28.00</td><td>28</td><td>21</td></tr>
+                        <tr><td>Dave Rogers</td><td>28.00</td><td>28</td><td>21</td></tr>
+                        <tr><td>Dean Hancock</td><td>26.00</td><td>26</td><td>20</td></tr>
+                        <tr><td>Gary Sheldon</td><td>28.00</td><td>28</td><td>21</td></tr>
+                        <tr><td>Geoff Wheeler</td><td>16.33</td><td>16</td><td>12</td></tr>
+                        <tr><td>George Sears</td><td>34.20</td><td>34</td><td>26</td></tr>
+                        <tr><td>Ian White</td><td>26.64</td><td>27</td><td>20</td></tr>
+                        <tr><td>Jack Ireland</td><td>12.45</td><td>12</td><td>9</td></tr>
+                        <tr><td>Jack Sears</td><td>25.04</td><td>25</td><td>19</td></tr>
+                        <tr><td>Junaid Khan</td><td>28.00</td><td>28</td><td>21</td></tr>
+                        <tr><td>Mark Clayton</td><td>11.39</td><td>11</td><td>9</td></tr>
+                        <tr><td>Matt Stubbs</td><td>15.78</td><td>16</td><td>12</td></tr>
+                        <tr><td>Rich Allison</td><td>26.95</td><td>27</td><td>20</td></tr>
+                        <tr><td>Rod White</td><td>21.96</td><td>22</td><td>16</td></tr>
+                        <tr><td>Simon Madders</td><td>8.27</td><td>8</td><td>6</td></tr>
+                        <tr><td>Steve Hughes</td><td>17.59</td><td>18</td><td>13</td></tr>
+                        <tr><td>Stuart White</td><td>28.00</td><td>28</td><td>21</td></tr>
+                        <tr><td>Tony Brown</td><td>28.00</td><td>28</td><td>21</td></tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section id="about">
+
+            <h2>About the Society</h2>
+
+            <p>
+                Castle Bromwich Golf Society was established in 2009
+                and provides members with regular golf competitions,
+                social events and opportunities to enjoy golf together.
+            </p>
+
+            <h3>Committee</h3>
+
+            <div class="committee-grid">
+
+                <div class="committee-member">
+                    <strong>Gary Sheldon</strong>
+                    President
+                </div>
+
+                <div class="committee-member">
+                    <strong>Ian White</strong>
+                    Chairman
+                </div>
+
+                <div class="committee-member">
+                    <strong>Jack Ireland</strong>
+                    Social Secretary
+                </div>
+
+                <div class="committee-member">
+                    <strong>Jack Sears</strong>
+                    Treasurer
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================= -->
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <div class="contact-box">
+
+                <p>
+                    For information about Castle Bromwich Golf Society,
+                    fixtures or society events, please contact a member
+                    of the committee.
+                </p>
+
+                <p>
+                    <strong>Social Secretary:</strong>
+                    Jack Ireland
+                </p>
+
+                <p>
+                    <strong>Chairman:</strong>
+                    Ian White
+                </p>
+
+                <p>
+                    <strong>Treasurer:</strong>
+                    Jack Sears
+                </p>
+
+                <p>
+                    <strong>President:</strong>
+                    Gary Sheldon
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            Castle Bromwich Golf Society
+        </p>
+
+        <p>
+            Established 2009
+        </p>
+
+        <p>
+            Members Website
+        </p>
+
+    </footer>
+
+</div>
+
+
+<!-- =========================
+     PASSWORD SCRIPT
+========================= -->
+
+<script>
+
+    function checkPassword(event) {
+
+        event.preventDefault();
+
+        const enteredPassword =
+            document.getElementById("password").value;
+
+        const correctPassword = "Cricket";
+
+        const loginScreen =
+            document.getElementById("login-screen");
+
+        const website =
+            document.getElementById("website");
+
+        const loginError =
+            document.getElementById("login-error");
+
+        if (enteredPassword === correctPassword) {
+
+            loginScreen.style.display = "none";
+            website.style.display = "block";
+
+        } else {
+
+            loginError.style.display = "block";
+
+            document.getElementById("password").value = "";
+
+            document.getElementById("password").focus();
+
+        }
+
+    }
+
+</script>
+</body> </html>
+
