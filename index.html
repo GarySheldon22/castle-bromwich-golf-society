@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="noindex, nofollow"> <meta name="googlebot" content="noindex, nofollow">
+
 <title>Castle Bromwich Golf Society</title>
 
 <style>
@@ -42,16 +44,23 @@
         width: 100%;
         max-width: 430px;
         background: white;
-        padding: 40px 30px;
+        padding: 35px 30px;
         border-radius: 14px;
         text-align: center;
         box-shadow: 0 10px 40px rgba(0,0,0,0.35);
     }
 
+    .login-logo {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
     .login-box h1 {
         margin-top: 0;
         color: #075b32;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .login-box p {
@@ -107,12 +116,23 @@
 
         color: white;
         text-align: center;
-        padding: 90px 20px;
+        padding: 45px 20px 55px;
+    }
+
+    .header-logo {
+        width: 190px;
+        height: 190px;
+        object-fit: contain;
+        background: white;
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
 
     header h1 {
         margin: 0;
-        font-size: 48px;
+        font-size: 46px;
     }
 
     header p {
@@ -139,7 +159,7 @@
 
     nav a:hover {
         background: #c9a227;
-        color: #fff;
+        color: white;
     }
 
     main {
@@ -164,7 +184,7 @@
     }
 
     /* =========================
-       HIGHLIGHT BOXES
+       HIGHLIGHT
     ========================= */
 
     .highlight {
@@ -178,6 +198,25 @@
     .highlight h3 {
         color: #075b32;
         margin-top: 0;
+    }
+
+    /* =========================
+       PRESENTATION NIGHT
+    ========================= */
+
+    .presentation-night {
+        text-align: center;
+        background: linear-gradient(135deg, #075b32, #0b7443);
+        color: white;
+    }
+
+    .presentation-night h2 {
+        color: white;
+        border-bottom-color: #c9a227;
+    }
+
+    .presentation-night strong {
+        color: #ffe48a;
     }
 
     /* =========================
@@ -225,32 +264,26 @@
         background: #fff8dc;
     }
 
-    /* =========================
-       PRESENTATION NIGHT
-    ========================= */
+    /* Course website buttons */
 
-    .presentation-night {
-        text-align: center;
-        background: linear-gradient(135deg, #075b32, #0b7443);
+    .course-link {
+        display: inline-block;
+        background: #075b32;
         color: white;
+        text-decoration: none;
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
     }
 
-    .presentation-night h2 {
-        color: white;
-        border-bottom-color: #c9a227;
-    }
-
-    .presentation-night strong {
-        color: #ffe48a;
+    .course-link:hover {
+        background: #c9a227;
     }
 
     /* =========================
-       CONTACT
+       COMMITTEE
     ========================= */
-
-    .contact-box {
-        text-align: center;
-    }
 
     .committee-grid {
         display: grid;
@@ -274,6 +307,14 @@
     }
 
     /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-box {
+        text-align: center;
+    }
+
+    /* =========================
        FOOTER
     ========================= */
 
@@ -294,12 +335,18 @@
     ========================= */
 
     @media (max-width: 700px) {
+
         header {
-            padding: 65px 15px;
+            padding: 30px 15px 40px;
+        }
+
+        .header-logo {
+            width: 145px;
+            height: 145px;
         }
 
         header h1 {
-            font-size: 34px;
+            font-size: 32px;
         }
 
         header p {
@@ -307,8 +354,8 @@
         }
 
         nav a {
-            padding: 11px 10px;
-            font-size: 14px;
+            padding: 11px 9px;
+            font-size: 13px;
         }
 
         main {
@@ -320,13 +367,21 @@
             margin: 20px 0;
         }
 
+        .login-logo {
+            width: 120px;
+            height: 120px;
+        }
+
         .login-box {
-            padding: 30px 20px;
+            padding: 25px 20px;
         }
     }
 </style>
+
 </head>
+
 <body>
+
 <!-- =========================
      PASSWORD SCREEN
 ========================= -->
@@ -334,6 +389,12 @@
 <div id="login-screen">
 
     <div class="login-box">
+
+        <img
+            src="logo.png"
+            alt="Castle Bromwich Golf Society Logo"
+            class="login-logo"
+        >
 
         <h1>Castle Bromwich Golf Society</h1>
 
@@ -368,18 +429,24 @@
 
 
 <!-- =========================
-     WEBSITE
+     MAIN WEBSITE
 ========================= -->
 
 <div id="website">
 
+    <!-- HEADER -->
+
     <header>
+
+        <img
+            src="logo.png"
+            alt="Castle Bromwich Golf Society Logo"
+            class="header-logo"
+        >
 
         <h1>Castle Bromwich Golf Society</h1>
 
-        <p>
-            Established 2009
-        </p>
+        <p>Established 2009</p>
 
     </header>
 
@@ -418,7 +485,6 @@
                 results, honours, playing handicaps and important
                 society information.
             </p>
-
 
             <div class="highlight">
 
@@ -606,7 +672,7 @@
 
 
         <!-- =========================
-             2026 RESULTS / HONOURS
+             RESULTS
         ========================= -->
 
         <section id="results">
@@ -1007,9 +1073,7 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -1072,5 +1136,5 @@
     }
 
 </script>
-</body> </html>
 
+</body> </html>
