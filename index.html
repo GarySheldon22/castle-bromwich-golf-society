@@ -8,6 +8,7 @@
 <title>Castle Bromwich Golf Society</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -24,7 +25,9 @@ body {
     line-height: 1.6;
 }
 
+
 /* LOGIN SCREEN */
+
 #login-screen {
     position: fixed;
     inset: 0;
@@ -97,12 +100,16 @@ body {
     margin-top: 12px;
 }
 
+
 /* WEBSITE */
+
 #website {
     display: none;
 }
 
+
 /* HEADER */
+
 header {
     background:
         linear-gradient(rgba(0,65,35,0.78), rgba(0,45,25,0.82)),
@@ -129,7 +136,9 @@ header p {
     font-size: 18px;
 }
 
+
 /* NAVIGATION */
+
 nav {
     background: #075b32;
     position: sticky;
@@ -158,7 +167,9 @@ nav a:hover {
     background: #0b7944;
 }
 
+
 /* MAIN */
+
 main {
     max-width: 1200px;
     margin: auto;
@@ -180,7 +191,9 @@ section h2 {
     margin-top: 0;
 }
 
+
 /* WELCOME */
+
 .welcome {
     text-align: center;
 }
@@ -195,7 +208,9 @@ section h2 {
     margin: 10px auto;
 }
 
+
 /* PRESENTATION NIGHT */
+
 .presentation {
     background: linear-gradient(135deg, #075b32, #0b7944);
     color: white;
@@ -215,7 +230,9 @@ section h2 {
     color: #ffe08a;
 }
 
+
 /* TABLES */
+
 .table-wrapper {
     overflow-x: auto;
 }
@@ -247,22 +264,26 @@ tr:hover {
     background: #e9f2eb;
 }
 
-/* HANDICAPS 2026 */
-.handicap 2026-note {
+
+/* HANDICAPS 2027 */
+
+.handicap-2027-note {
     background: #f0f7f2;
     border-left: 5px solid #075b32;
     padding: 12px 15px;
     margin-bottom: 15px;
 }
 
+
 /* HONOURS 2026 */
-.honours-grid {
+
+.honours-2026-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
-.honours 2026-card {
+.honours-2026-card {
     border: 1px solid #ddd;
     border-top: 5px solid #075b32;
     border-radius: 8px;
@@ -270,16 +291,18 @@ tr:hover {
     background: #fafafa;
 }
 
-.honours 2026-card h3 {
+.honours-2026-card h3 {
     color: #075b32;
     margin-top: 0;
 }
 
-.honours 2026-card p {
+.honours-2026-card p {
     margin: 7px 0;
 }
 
+
 /* ABOUT */
+
 .about-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -297,7 +320,9 @@ tr:hover {
     color: #075b32;
 }
 
+
 /* CONTACT */
+
 .contact-box {
     text-align: center;
     background: #f0f7f2;
@@ -310,7 +335,9 @@ tr:hover {
     font-weight: bold;
 }
 
+
 /* GALLERY */
+
 .gallery-intro {
     text-align: center;
     margin-bottom: 25px;
@@ -354,7 +381,9 @@ tr:hover {
     text-align: center;
 }
 
+
 /* LIGHTBOX */
+
 #lightbox {
     display: none;
     position: fixed;
@@ -395,7 +424,9 @@ tr:hover {
     cursor: pointer;
 }
 
+
 /* FOOTER */
+
 footer {
     background: #063d23;
     color: white;
@@ -417,7 +448,9 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
 /* MOBILE */
+
 @media (max-width: 700px) {
 
     header {
@@ -475,20 +508,27 @@ footer a:hover {
     #lightbox-close {
         right: 15px;
     }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
+
 <!-- LOGIN SCREEN -->
+
 <div id="login-screen">
 
     <div class="login-box">
 
-        <img src="logo.png"
-             alt="Castle Bromwich Golf Society logo"
-             class="login-logo">
+        <img
+            src="logo.png"
+            alt="Castle Bromwich Golf Society logo"
+            class="login-logo"
+        >
 
         <h1>Castle Bromwich Golf Society</h1>
 
@@ -520,9 +560,12 @@ footer a:hover {
 
 
 <!-- WEBSITE -->
+
 <div id="website">
 
+
     <!-- HEADER -->
+
     <header>
 
         <img
@@ -539,6 +582,7 @@ footer a:hover {
 
 
     <!-- NAVIGATION -->
+
     <nav>
 
         <div class="nav-container">
@@ -547,7 +591,7 @@ footer a:hover {
 
             <a href="#events">Upcoming Events</a>
 
-            <a href="#handicaps 2027">Handicaps 2027</a>
+            <a href="#handicaps-2027">Handicaps 2027</a>
 
             <a href="#results">Results</a>
 
@@ -566,7 +610,9 @@ footer a:hover {
 
     <main>
 
+
         <!-- HOME -->
+
         <section id="home" class="welcome">
 
             <h2>Welcome to Castle Bromwich Golf Society</h2>
@@ -587,6 +633,7 @@ footer a:hover {
 
 
         <!-- PRESENTATION NIGHT -->
+
         <section class="presentation">
 
             <h2>🏆 Presentation Night 2026</h2>
@@ -621,6 +668,7 @@ footer a:hover {
 
 
         <!-- LATEST RESULT -->
+
         <section>
 
             <h2>Latest Result</h2>
@@ -630,12 +678,14 @@ footer a:hover {
                 <table>
 
                     <thead>
+
                         <tr>
                             <th>Competition</th>
                             <th>Course</th>
                             <th>Winner</th>
                             <th>Score</th>
                         </tr>
+
                     </thead>
 
                     <tbody>
@@ -657,6 +707,7 @@ footer a:hover {
 
 
         <!-- UPCOMING EVENTS -->
+
         <section id="events">
 
             <h2>Upcoming Events</h2>
@@ -769,11 +820,12 @@ footer a:hover {
 
 
         <!-- PLAYING HANDICAPS 2027 -->
-        <section id="handicaps 2027">
+
+        <section id="handicaps-2027">
 
             <h2>Playing Handicaps 2027</h2>
 
-            <div class="handicap-note">
+            <div class="handicap-2027-note">
                 Current playing handicaps 2027 for Castle Bromwich Golf Society members.
             </div>
 
@@ -827,6 +879,7 @@ footer a:hover {
 
 
         <!-- RESULTS -->
+
         <section id="results">
 
             <h2>2026 Results</h2>
@@ -931,13 +984,15 @@ footer a:hover {
 
 
         <!-- HONOURS 2026 -->
+
         <section id="honours">
 
             <h2>Honours 2026</h2>
 
-            <div class="honours 2026-grid">
+            <div class="honours-2026-grid">
 
-                <div class="honours 2026-card">
+
+                <div class="honours-2026-card">
 
                     <h3>Championship</h3>
 
@@ -954,7 +1009,7 @@ footer a:hover {
                 </div>
 
 
-                <div class="honours 2026-card">
+                <div class="honours-2026-card">
 
                     <h3>Division 1</h3>
 
@@ -971,7 +1026,7 @@ footer a:hover {
                 </div>
 
 
-                <div class="honours 2026-card">
+                <div class="honours-2026-card">
 
                     <h3>Division 2</h3>
 
@@ -987,12 +1042,14 @@ footer a:hover {
 
                 </div>
 
+
             </div>
 
         </section>
 
 
         <!-- ABOUT -->
+
         <section id="about">
 
             <h2>About the Society</h2>
@@ -1032,6 +1089,7 @@ footer a:hover {
 
 
         <!-- CONTACT -->
+
         <section id="contact">
 
             <h2>Contact</h2>
@@ -1059,6 +1117,7 @@ footer a:hover {
 
 
         <!-- GALLERY -->
+
         <section id="gallery">
 
             <h2>Society Gallery</h2>
@@ -1081,6 +1140,7 @@ footer a:hover {
 
 
                 <!-- 2010 -->
+
                 <button
                     class="gallery-item"
                     type="button"
@@ -1105,6 +1165,7 @@ footer a:hover {
 
 
                 <!-- 2011 -->
+
                 <button
                     class="gallery-item"
                     type="button"
@@ -1129,6 +1190,7 @@ footer a:hover {
 
 
                 <!-- 2012 -->
+
                 <button
                     class="gallery-item"
                     type="button"
@@ -1156,10 +1218,12 @@ footer a:hover {
 
         </section>
 
+
     </main>
 
 
     <!-- FOOTER -->
+
     <footer>
 
         <p>
@@ -1174,10 +1238,12 @@ footer a:hover {
 
     </footer>
 
+
 </div>
 
 
 <!-- LIGHTBOX -->
+
 <div
     id="lightbox"
     role="dialog"
@@ -1208,7 +1274,9 @@ footer a:hover {
 
 <script>
 
+
 /* PASSWORD */
+
 function checkPassword(event) {
 
     event.preventDefault();
@@ -1248,6 +1316,7 @@ function checkPassword(event) {
 
 
 /* OPEN GALLERY PHOTO */
+
 function openLightbox(imageSrc, caption) {
 
     const lightbox =
@@ -1272,6 +1341,7 @@ function openLightbox(imageSrc, caption) {
 
 
 /* CLOSE GALLERY PHOTO */
+
 function closeLightbox() {
 
     const lightbox =
@@ -1285,6 +1355,7 @@ function closeLightbox() {
 
 
 /* ESCAPE KEY CLOSES PHOTO */
+
 document.addEventListener("keydown", function(event) {
 
     if (event.key === "Escape") {
@@ -1296,6 +1367,7 @@ document.addEventListener("keydown", function(event) {
 });
 
 </script>
+
 
 </body>
 </html>
