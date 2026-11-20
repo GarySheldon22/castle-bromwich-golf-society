@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* LOGIN SCREEN */
 
 #login-screen {
@@ -99,11 +100,13 @@ body {
     margin-top: 12px;
 }
 
+
 /* WEBSITE */
 
 #website {
     display: none;
 }
+
 
 /* HEADER */
 
@@ -132,6 +135,7 @@ header p {
     margin: 5px 0;
     font-size: 18px;
 }
+
 
 /* NAVIGATION */
 
@@ -163,6 +167,7 @@ nav a:hover {
     background: #0b7944;
 }
 
+
 /* MAIN */
 
 main {
@@ -186,6 +191,7 @@ section h2 {
     margin-top: 0;
 }
 
+
 /* WELCOME */
 
 .welcome {
@@ -201,6 +207,7 @@ section h2 {
     max-width: 850px;
     margin: 10px auto;
 }
+
 
 /* PRESENTATION NIGHT */
 
@@ -223,6 +230,7 @@ section h2 {
     color: #ffe08a;
 }
 
+
 /* TABLES */
 
 .table-wrapper {
@@ -234,6 +242,10 @@ table {
     border-collapse: collapse;
     margin-top: 15px;
     min-width: 650px;
+}
+
+.events-table {
+    min-width: 1250px;
 }
 
 th {
@@ -256,32 +268,6 @@ tr:hover {
     background: #e9f2eb;
 }
 
-/* 2027 EVENTS TABLE */
-
-.events-table {
-    min-width: 1250px;
-}
-
-.events-table th,
-.events-table td {
-    white-space: nowrap;
-    padding: 12px 14px;
-}
-
-.events-table td:nth-child(4) {
-    white-space: normal;
-    min-width: 210px;
-}
-
-.events-table a {
-    color: #075b32;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.events-table a:hover {
-    color: #0b7944;
-}
 
 /* HANDICAPS 2027 */
 
@@ -291,6 +277,7 @@ tr:hover {
     padding: 12px 15px;
     margin-bottom: 15px;
 }
+
 
 /* HONOURS 2026 */
 
@@ -317,6 +304,7 @@ tr:hover {
     margin: 7px 0;
 }
 
+
 /* ABOUT */
 
 .about-grid {
@@ -336,6 +324,7 @@ tr:hover {
     color: #075b32;
 }
 
+
 /* CONTACT */
 
 .contact-box {
@@ -349,6 +338,7 @@ tr:hover {
     color: #075b32;
     font-weight: bold;
 }
+
 
 /* GALLERY */
 
@@ -395,6 +385,7 @@ tr:hover {
     text-align: center;
 }
 
+
 /* LIGHTBOX */
 
 #lightbox {
@@ -437,6 +428,7 @@ tr:hover {
     cursor: pointer;
 }
 
+
 /* FOOTER */
 
 footer {
@@ -459,6 +451,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
 
 /* MOBILE */
 
@@ -525,7 +518,9 @@ footer a:hover {
 </style>
 </head>
 
+
 <body>
+
 
 <!-- LOGIN SCREEN -->
 
@@ -543,7 +538,7 @@ footer a:hover {
 
         <p>Members Area</p>
 
-        <form onsubmit="checkPassword(event)">
+        <form id="login-form">
 
             <input
                 type="password"
@@ -567,9 +562,11 @@ footer a:hover {
 
 </div>
 
+
 <!-- WEBSITE -->
 
 <div id="website">
+
 
     <!-- HEADER -->
 
@@ -587,6 +584,7 @@ footer a:hover {
 
     </header>
 
+
     <!-- NAVIGATION -->
 
     <nav>
@@ -594,19 +592,28 @@ footer a:hover {
         <div class="nav-container">
 
             <a href="#home">Home</a>
+
             <a href="#events">Upcoming Events</a>
+
             <a href="#handicaps-2027">Handicaps 2027</a>
+
             <a href="#results">Results</a>
+
             <a href="#honours">Honours</a>
+
             <a href="#about">About</a>
+
             <a href="#contact">Contact</a>
+
             <a href="#gallery">Gallery</a>
 
         </div>
 
     </nav>
 
+
     <main>
+
 
         <!-- HOME -->
 
@@ -627,6 +634,7 @@ footer a:hover {
             </p>
 
         </section>
+
 
         <!-- PRESENTATION NIGHT -->
 
@@ -662,6 +670,7 @@ footer a:hover {
 
         </section>
 
+
         <!-- LATEST RESULT -->
 
         <section>
@@ -673,21 +682,25 @@ footer a:hover {
                 <table>
 
                     <thead>
+
                         <tr>
                             <th>Competition</th>
                             <th>Course</th>
                             <th>Winner</th>
                             <th>Score</th>
                         </tr>
+
                     </thead>
 
                     <tbody>
+
                         <tr>
                             <td>BDM Trophy</td>
                             <td>West Midlands Golf Club</td>
                             <td>Adam Beasley</td>
                             <td>44 Stableford Points</td>
                         </tr>
+
                     </tbody>
 
                 </table>
@@ -696,199 +709,131 @@ footer a:hover {
 
         </section>
 
-        <!-- UPCOMING EVENTS 2027 -->
+
+        <!-- UPCOMING EVENTS -->
 
         <section id="events">
 
-            <h2>Golf Dates &amp; Tee Times 2027</h2>
-
-            <p>
-                The society's 2027 fixtures, including course details,
-                tee-off times and food arrangements.
-            </p>
+            <h2>Upcoming Events 2027</h2>
 
             <div class="table-wrapper">
 
                 <table class="events-table">
 
                     <thead>
-
                         <tr>
-                            <th>Match</th>
-                            <th>Trophy</th>
+                            <th>Game</th>
                             <th>Date</th>
                             <th>Course</th>
                             <th>Postcode</th>
-                            <th>Drive Time Approx</th>
-                            <th>Tee Off</th>
+                            <th>Travel Time</th>
+                            <th>Tee Time</th>
                             <th>Food</th>
                             <th>Course Website</th>
                         </tr>
-
                     </thead>
 
                     <tbody>
-
                         <tr>
-                            <td>Match 1</td>
-                            <td>Mundell Cup</td>
-                            <td>Sat-03-Apr-27</td>
+                            <td>Match 1 — Mundell Cup</td>
+                            <td>Sat 3 Apr 2027</td>
                             <td>Calderfields Golf &amp; Country Club</td>
                             <td>WS4 2JS</td>
                             <td>20–30 min</td>
                             <td>11:40</td>
                             <td>Full English Breakfast</td>
-                            <td>
-                                <a href="https://calderfieldsgolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Calderfields Golf &amp; Country Club
-                                </a>
-                            </td>
+                            <td><a href="https://calderfieldsgolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
                             <td>Funday</td>
-                            <td>Funday</td>
-                            <td>Sat-17-Apr-27</td>
-                            <td>Lichfield Golf &amp; Country Club 9 / 18 Holes</td>
+                            <td>Sat 17 Apr 2027</td>
+                            <td>Lichfield Golf &amp; Country Club — 9 / 18 Holes</td>
                             <td>WS13 8HE</td>
                             <td>30–40 min</td>
                             <td>8:30 par 3 &amp; 18 holes 11:20pm</td>
                             <td>Bacon Rolls with tea/coffee</td>
-                            <td>
-                                <a href="https://lichfieldgolfandcountryclub.com/" target="_blank" rel="noopener noreferrer">
-                                    Lichfield Golf &amp; Country Club
-                                </a>
-                            </td>
+                            <td><a href="https://lichfieldgolfandcountryclub.com/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 2</td>
-                            <td>Sheldon Cup</td>
-                            <td>Sat-15-May-27</td>
+                            <td>Match 2 — Sheldon Cup</td>
+                            <td>Sat 15 May 2027</td>
                             <td>Aston Wood Golf Club</td>
                             <td>B74 4EU</td>
                             <td>10–20 min</td>
                             <td>13:06</td>
                             <td>No Food</td>
-                            <td>
-                                <a href="https://www.astonwoodgolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Aston Wood Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.astonwoodgolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 3</td>
-                            <td>Les White Trophy</td>
-                            <td>Sat-19-Jun-27</td>
+                            <td>Match 3 — Les White Trophy</td>
+                            <td>Sat 19 Jun 2027</td>
                             <td>Rugby Golf Club</td>
                             <td>CV22 5QZ</td>
                             <td>40–50 min</td>
                             <td>13:00</td>
                             <td>Bacon Rolls with tea/coffee</td>
-                            <td>
-                                <a href="https://www.rugbygolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Rugby Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.rugbygolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 4</td>
-                            <td>Dave Oley Cup</td>
-                            <td>Sat-10-Jul-27</td>
+                            <td>Match 4 — Dave Oley Cup</td>
+                            <td>Sat 10 Jul 2027</td>
                             <td>Draycote Hotel &amp; Whitefields Golf</td>
                             <td>CV23 9LF</td>
                             <td>40–50 min</td>
                             <td>11:56</td>
                             <td>No Food</td>
-                            <td>
-                                <a href="https://www.whitefieldsgolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Whitefields Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.whitefieldsgolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 5</td>
-                            <td>General Committee</td>
-                            <td>Sat-24-Jul-27</td>
+                            <td>Match 5 — General Committee</td>
+                            <td>Sat 24 Jul 2027</td>
                             <td>Druids Heath Golf Club</td>
                             <td>WS9 8JZ</td>
                             <td>20–30 min</td>
                             <td>13:00</td>
                             <td>No Food</td>
-                            <td>
-                                <a href="https://www.druidsheathgc.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Druids Heath Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.druidsheathgc.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 6</td>
-                            <td>Presidents Cup</td>
-                            <td>Fri-20-Aug-27</td>
+                            <td>Match 6 — Presidents Cup</td>
+                            <td>Fri 20 Aug 2027</td>
                             <td>Droitwich Golf Club</td>
                             <td>WR9 0BH</td>
                             <td>35–45 min</td>
                             <td>11:00</td>
                             <td>No Food</td>
-                            <td>
-                                <a href="https://www.droitwichgolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Droitwich Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.droitwichgolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 7</td>
-                            <td>Mark Sadler Cup</td>
-                            <td>Sun-29-Aug-27</td>
+                            <td>Match 7 — Mark Sadler Cup</td>
+                            <td>Sun 29 Aug 2027</td>
                             <td>Hinckley Golf Club</td>
                             <td>LE10 3DR</td>
                             <td>35–45 min</td>
                             <td>12:00</td>
                             <td>No Food</td>
-                            <td>
-                                <a href="https://www.hinckleygolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Hinckley Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.hinckleygolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 8</td>
-                            <td>Camlec Trophy</td>
-                            <td>Sat-04-Sep-27</td>
+                            <td>Match 8 — Camlec Trophy</td>
+                            <td>Sat 4 Sep 2027</td>
                             <td>Telford Hotel &amp; Golf Resort</td>
                             <td>TF7 4DT</td>
                             <td>45–55 min</td>
                             <td>11:10</td>
                             <td>Bacon Rolls with tea/coffee</td>
-                            <td>
-                                <a href="https://www.telfordhotelgolfresort.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    Telford Hotel &amp; Golf Resort
-                                </a>
-                            </td>
+                            <td><a href="https://www.telfordhotelgolfresort.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                         <tr>
-                            <td>Match 9</td>
-                            <td>BDM Trophy</td>
-                            <td>Sat-02-Oct-27</td>
+                            <td>Match 9 — BDM Trophy</td>
+                            <td>Sat 2 Oct 2027</td>
                             <td>West Midlands Golf Club</td>
                             <td>B92 0LB</td>
                             <td>25–35 min</td>
                             <td>12:00</td>
                             <td>No Food</td>
-                            <td>
-                                <a href="https://www.westmidlandsgolfclub.co.uk/" target="_blank" rel="noopener noreferrer">
-                                    West Midlands Golf Club
-                                </a>
-                            </td>
+                            <td><a href="https://www.westmidlandsgolfclub.co.uk/" target="_blank" rel="noopener">Visit website</a></td>
                         </tr>
-
                     </tbody>
 
                 </table>
@@ -896,6 +841,7 @@ footer a:hover {
             </div>
 
         </section>
+
 
         <!-- PLAYING HANDICAPS 2027 -->
 
@@ -912,15 +858,18 @@ footer a:hover {
                 <table>
 
                     <thead>
+
                         <tr>
                             <th>Member</th>
                             <th>Full Handicap</th>
                             <th>Playing Handicap</th>
                             <th>3/4 Handicap</th>
                         </tr>
+
                     </thead>
 
                     <tbody>
+
                         <tr><td>Adam Beasley</td><td>21.75</td><td>22</td><td>16</td></tr>
                         <tr><td>Andy Moulton</td><td>20.11</td><td>20</td><td>15</td></tr>
                         <tr><td>Chris Watkins</td><td>14.89</td><td>15</td><td>11</td></tr>
@@ -943,6 +892,7 @@ footer a:hover {
                         <tr><td>Steve Hughes</td><td>17.59</td><td>18</td><td>13</td></tr>
                         <tr><td>Stuart White</td><td>28.00</td><td>28</td><td>21</td></tr>
                         <tr><td>Tony Brown</td><td>28.00</td><td>28</td><td>21</td></tr>
+
                     </tbody>
 
                 </table>
@@ -950,6 +900,7 @@ footer a:hover {
             </div>
 
         </section>
+
 
         <!-- RESULTS -->
 
@@ -962,6 +913,7 @@ footer a:hover {
                 <table>
 
                     <thead>
+
                         <tr>
                             <th>Date</th>
                             <th>Competition</th>
@@ -969,6 +921,7 @@ footer a:hover {
                             <th>Runner-up</th>
                             <th>Course</th>
                         </tr>
+
                     </thead>
 
                     <tbody>
@@ -1053,6 +1006,7 @@ footer a:hover {
 
         </section>
 
+
         <!-- HONOURS 2026 -->
 
         <section id="honours">
@@ -1060,6 +1014,7 @@ footer a:hover {
             <h2>Honours 2026</h2>
 
             <div class="honours-2026-grid">
+
 
                 <div class="honours-2026-card">
 
@@ -1077,6 +1032,7 @@ footer a:hover {
 
                 </div>
 
+
                 <div class="honours-2026-card">
 
                     <h3>Division 1</h3>
@@ -1092,6 +1048,7 @@ footer a:hover {
                     </p>
 
                 </div>
+
 
                 <div class="honours-2026-card">
 
@@ -1109,9 +1066,11 @@ footer a:hover {
 
                 </div>
 
+
             </div>
 
         </section>
+
 
         <!-- ABOUT -->
 
@@ -1152,6 +1111,7 @@ footer a:hover {
 
         </section>
 
+
         <!-- CONTACT -->
 
         <section id="contact">
@@ -1179,6 +1139,7 @@ footer a:hover {
 
         </section>
 
+
         <!-- GALLERY -->
 
         <section id="gallery">
@@ -1198,7 +1159,9 @@ footer a:hover {
 
             </div>
 
+
             <div class="gallery-grid">
+
 
                 <!-- 2010 -->
 
@@ -1224,6 +1187,7 @@ footer a:hover {
 
                 </button>
 
+
                 <!-- 2011 -->
 
                 <button
@@ -1247,6 +1211,7 @@ footer a:hover {
                     </span>
 
                 </button>
+
 
                 <!-- 2012 -->
 
@@ -1272,11 +1237,14 @@ footer a:hover {
 
                 </button>
 
+
             </div>
 
         </section>
 
+
     </main>
+
 
     <!-- FOOTER -->
 
@@ -1294,7 +1262,9 @@ footer a:hover {
 
     </footer>
 
+
 </div>
+
 
 <!-- LIGHTBOX -->
 
@@ -1325,95 +1295,52 @@ footer a:hover {
 
 </div>
 
+
 <script>
 
-/* PASSWORD */
-
-function checkPassword(event) {
-
+/* PASSWORD LOGIN */
+document.getElementById("login-form").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const enteredPassword =
-        document.getElementById("password").value;
+    const enteredPassword = document.getElementById("password").value.trim();
 
-    const correctPassword = "Cricket";
-
-    const loginScreen =
-        document.getElementById("login-screen");
-
-    const website =
-        document.getElementById("website");
-
-    const loginError =
-        document.getElementById("login-error");
-
-    if (enteredPassword === correctPassword) {
-
-        loginScreen.style.display = "none";
-
-        website.style.display = "block";
-
+    if (enteredPassword === "Cricket") {
+        document.getElementById("login-screen").style.display = "none";
+        document.getElementById("website").style.display = "block";
     } else {
-
-        loginError.style.display = "block";
-
+        document.getElementById("login-error").style.display = "block";
         document.getElementById("password").value = "";
-
         document.getElementById("password").focus();
-
     }
-
-}
+});
 
 /* OPEN GALLERY PHOTO */
-
 function openLightbox(imageSrc, caption) {
-
-    const lightbox =
-        document.getElementById("lightbox");
-
-    const lightboxImage =
-        document.getElementById("lightbox-image");
-
-    const lightboxCaption =
-        document.getElementById("lightbox-caption");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const lightboxCaption = document.getElementById("lightbox-caption");
 
     lightboxImage.src = imageSrc;
-
     lightboxImage.alt = caption;
-
     lightboxCaption.textContent = caption;
-
     lightbox.style.display = "flex";
-
 }
 
 /* CLOSE GALLERY PHOTO */
-
 function closeLightbox() {
-
-    const lightbox =
-        document.getElementById("lightbox");
-
-    lightbox.style.display = "none";
-
+    document.getElementById("lightbox").style.display = "none";
     document.getElementById("lightbox-image").src = "";
-
 }
 
 /* ESCAPE KEY CLOSES PHOTO */
-
 document.addEventListener("keydown", function(event) {
-
     if (event.key === "Escape") {
-
         closeLightbox();
-
     }
-
 });
 
 </script>
+
 
 </body>
 </html>
